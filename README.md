@@ -21,7 +21,7 @@ A simple RESTFull service for storing and reading transactions. A simple example
 
 From the TransactionService directory run the gradel build script, on Windows this looks like:
 
-* gradlew.bat build
+* gradlew build
 
 You can then run TransactionService:
 
