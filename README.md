@@ -6,9 +6,12 @@ A simple RESTFull service for storing and reading transactions. A simple example
     => { "status": "ok" }
     PUT /transactionservice/transaction/11 { "amount": 10000, "type": "shopping", "parent_id": 10 }
     => { "status": "ok" }
-    GET /transactionservice/types/cars => [10]
-    GET /transactionservice/sum/10 => {"sum":15000}
-    GET /transactionservice/sum/11 => {"sum":10000} 
+    GET /transactionservice/types/cars 
+    => [10]
+    GET /transactionservice/sum/10
+    => {"sum":15000}
+    GET /transactionservice/sum/11
+    => {"sum":10000} 
 
 ## Requirements
 
