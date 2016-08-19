@@ -55,3 +55,14 @@ To interact with the serice use a REST client such as Postman (https://www.getpo
     Returns:
     { "amount":double,"type":string,"parent_id":long } 
 
+### GET A json list of all transaction ids that share the same type $type
+
+    GET /transactionservice/types/$type
+    Returns:
+    [ long, long, .... ] 
+
+### GET A sum of all transactions that are transitively linked by their parent_id to $transaction_id
+
+    GET /transactionservice/sum/$transaction_id
+    Returns
+    { "sum", double }
