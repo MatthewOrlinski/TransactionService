@@ -19,7 +19,7 @@ A simple RESTFull service for storing and reading transactions. A simple example
 
 ## Build and Run
 
-From the TransactionService directory run the gradel build script, on Windows this looks like:
+From the TransactionService directory run the gradel build script:
 
 * gradlew build
 
