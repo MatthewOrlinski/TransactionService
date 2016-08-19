@@ -69,3 +69,7 @@ To interact with the serice use a REST client such as Postman (https://www.getpo
     GET /transactionservice/sum/$transaction_id
     Returns
     { "sum", double }
+    
+## Discussion
+
+Retrieving the children of transactions would have been very expensive if only using the parent_id field in a transaction and a simple data structure such as a map or a list. To solve this I chose to use an additional data structure to store the relationship between transactions, and another to store IDs belonging to transaction types. This sacrifices space but means that the 'sum' and 'types' look ups can be completed almost in constant time. There's some risk with the sum method because we don't stop loops and potentially every node could be a child of some generation of the given transcation ID, but for now I think its OK. 
